@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<head>
+    <title>Sathyabama Food Corner</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: darkblue;
+        }
+
+        header {
+            background-color: darkblue;
+            color: white;
+            padding: 20px 50px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 50px;
+        }
+
+        .text {
+            max-width: 500px;
+        }
+
+        .text h1 {
+            font-size: 36px;
+        }
+
+        .text p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .button {
+            background-color:darkblue;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+           
+            border-radius: 10px;
+        }
+
+        .feature-section {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            margin-top: 15px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-top: 10px;
+        }
+
+        .home-delivery {
+            background-color: lightgoldenrodyellow; 
+        }
+
+        .discounts {
+            background-color: lightcyan; 
+        }
+
+        .fresh-ingredients {
+            background-color: palegreen; 
+        }
+
+        /* Footer Styling */
+        footer {
+            background-color: darkblue;
+            color: white;
+            padding: 30px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 10px;
+        }
+
+        .footer-section h3 {
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-section ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .footer-section ul li a:hover {
+            text-decoration: underline;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
+        .image-layout {
+            padding: 50px 0;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .image-item {
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 10px;
+        }
+
+        .image-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .large {
+            flex: 2;
+        }
+
+        .small {
+            flex: 1;
+        }
+
+        .explore-menu {
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="brand">Sathyabama Food Corner</div>
+    </header>
+
+    <div class="container">
+        <img src="food1.jpg" alt="Delicious Food">
+        <div class="text">
+            <h1>Enjoy Your Delicious Food</h1>
+            <p>Welcome to Sathyabama Corner, where we serve the most delicious and healthy meals to delight your taste buds. Follow us for exclusive offers and a unique culinary experience.</p>
+            <a href="#" class="button">Explore Now</a>
+        </div>
+    </div>
+
+    <div class="feature-section">
+        <div class="feature home-delivery">
+            <img src="del.jpg" alt="Home Delivery">
+            <h2>Home Delivery</h2>
+            <p>Enjoy your favorite meals delivered right to your doorstep with our fast and reliable home delivery service.</p>
+        </div>
+        <div class="feature discounts">
+            <img src="discount.png" alt="Discount">
+            <h2>Exclusive Discounts</h2>
+            <p>Get amazing discounts on your orders and save big with our limited-time offers and deals.</p>
+        </div>
+        <div class="feature fresh-ingredients">
+            <img src="fresh.jpg" alt="Fresh Ingredients">
+            <h2>Fresh Ingredients</h2>
+            <p>We use only the freshest ingredients to prepare every dish, ensuring a nutritious and delightful experience.</p>
+        </div>
+    </div>
+
+    <div class="explore-menu">
+        Explore Our Menu
+    </div>
+
+    <div class="image-layout">
+
+        <div class="row">
+            <div class="image-item large">
+                <img src="img6.webp" alt="Image 1">
+            </div>
+            <div class="image-item large">
+                <img src="image2.jpg" alt="Fresh">
+            </div>
+            <div class="image-item large">
+                <img src="image3.webp" alt="Image 2">
+            </div> 
+        </div>
+
+        <div class="row">
+            
+            <div class="image-item small">
+                <img src="image5.jpg" alt="IMAGE4">
+            </div>
+            <div class="image-item small">
+                <img src="img6.webp" alt="IMAGE 5">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="image-item small">
+                <img src="image3.webp" alt="IMAGE 6">
+            </div>
+            <div class="image-item small">
+                <img src="image1.jpeg" alt="Image 7">
+            </div>
+            <div class="image-item small">
+                <img src="image2.jpg" alt="Image 8">
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-section">
+            <h3>Sathyabama Food Corner</h3>
+        </div>
+        <div class="footer-section">
+            <h3>Main Links</h3>
+            <ul>
+                <li><a href="#">Order Tracking</a></li>
+                <li><a href="#">New Order</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">News & Blogs</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Support Us</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="#"><img src="fb.png" alt="Facebook"></a>
+                <a href="#"><img src="insta.jpg" alt="Instagram"></a>
+                <a href="#"><img src="yt1.png" alt="YouTube"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
