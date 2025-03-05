@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style>
+		.calculator {
+			width: 260px;
+			height: 250px;
+			border: 1px solid #ac3232;
+			padding: 20px;
+		}
+		
+		.button {
+			width: 50px;
+			height: 30px;
+			margin: 5px;
+			background-color: lightcoral;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		
+		.button:hover {
+			background-color:white;
+		}
+	</style>
+</head>
+<body>
+	<div class="calculator">
+		<input type="text" id="display" disabled>
+		
+		<div>
+			<button class="button">7</button>
+			<button class="button">8</button>
+			<button class="button">9</button>
+			<button class="button">/</button>
+		</div>
+		
+		<div>
+			<button class="button">4</button>
+			<button class="button">5</button>
+			<button class="button">6</button>
+			<button class="button">*</button>
+		</div>
+		
+		<div>
+			<button class="button">1</button>
+			<button class="button">2</button>
+			<button class="button">3</button>
+			<button class="button">-</button>
+		</div>
+		
+		<div>
+			<button class="button">0</button>
+			<button class="button">.</button>
+			<button class="button">=</button>
+			<button class="button">+</button>
+		</div>
+        <div>
+            <button class="button">RESET</button>
+            <button class="button">OK</button>
+        </div>
+	</div>
+</body>
+</html>

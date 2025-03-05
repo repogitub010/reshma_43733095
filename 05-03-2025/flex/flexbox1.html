@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+    <title>Flexbox Hover Concept</title>
+    <style>
+       .menu-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+        }
+        .menu-container img {
+            width: 30%;
+            border-radius: 10px;
+            
+        }
+        .menu-container img:hover {
+            transform: scale(1.1); 
+            box-shadow: 0 4px 15px rgba(213, 16, 16, 0.2); 
+        }
+        h2 {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h2>FLEX BOX CONCEPTS PRACTICE</h2>
+        <div class="menu-container">
+            <img src="image1.jpeg" alt="Dish 1">
+            <img src="image2.jpg" alt="Dish 2">
+            <img src="image3.webp" alt="Dish 3">
+            <img src="img4.jpg" alt="Dish 4">
+            <img src="image5.jpg" alt="Dish 4">
+            <img src="image7.jpg" alt="Dish 2">
+        </div>
+    </div>
+</body>
+</html>

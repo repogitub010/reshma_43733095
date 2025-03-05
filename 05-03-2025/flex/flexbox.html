@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            text-align: center;
+        }
+        .menu-container {
+            padding: 20px;
+        }
+        .menu-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+        .menu-item {
+            width: 30%;
+            min-width: 250px;
+            height: 250px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-container">
+        <div class="menu-grid">
+            <div class="menu-item" style="background-image: url('image1.jpeg');"></div>
+            <div class="menu-item" style="background-image: url('image2.jpg');"></div>
+            <div class="menu-item" style="background-image: url('image3.webp');"></div>
+            <div class="menu-item" style="background-image: url('image5.jpg');"></div>
+        </div>
+    </div>
+</body>
+</html>

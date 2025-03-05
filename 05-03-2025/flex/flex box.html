@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: white;
+        }
+
+        .container {
+            display: flex;
+            gap: 10px;
+            align-items: flex-start;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .row {
+            display: flex;
+            gap: 10px;
+        }
+
+        img {
+            object-fit: cover;
+            border: 1px solid black;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+            box-shadow: 3px 3px 10px black;
+        }
+
+        .large { width: 250px; height: 250px; }
+        .tall { width: 120px; height: 250px; }
+        .medium { width: 120px; height: 120px; }
+        .small { width: 90px; height: 100px; }
+
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: black;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .lightbox img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+       
+        <div class="column">
+            <img src="image1.jpeg" class="large" onclick="openLightbox(this)">
+            <div class="row">
+                <img src="image2.jpg" class="medium" onclick="openLightbox(this)">
+                <img src="image3.webp" class="medium" onclick="openLightbox(this)">
+            </div>
+        </div>
+
+        <div class="column">
+            <img src="img4.jpg" class="tall" onclick="openLightbox(this)">
+            <img src="image5.jpg" class="medium" onclick="openLightbox(this)">
+        </div>
+
+        <div class="column">
+            <img src="img6.webp" class="medium" onclick="openLightbox(this)">
+            <img src="image7.jpg" class="medium" onclick="openLightbox(this)">
+            <img src="image7.jpg" class="medium" onclick="openLightbox(this)">
+        </div>
+    </div>
+
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+        <img id="lightbox-img" src="" alt="Popup Image">
+    </div>
+
+    <script>
+        function openLightbox(img) {
+            document.getElementById("lightbox-img").src = img.src;
+            document.getElementById("lightbox").style.display = "flex";
+        }
+
+        function closeLightbox() {
+            document.getElementById("lightbox").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
