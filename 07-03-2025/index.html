@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> FOOD PREP</title>
+    <style>
+       body{
+        padding: 0px;
+        margin: 0px;
+        font-family: "Montserrat", sans-serif;
+       }
+       .navbar{
+        width: 100%;
+        height: 100%;
+        background-color: lightblue;
+        border: 5px;
+        border-color: black;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       }
+       .nav-brand{
+        width: 100%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items:start;
+
+       }
+       .nav-info{
+        width: 100%;
+        height: 80%;
+        padding: 5px 15px;
+        
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items:center;
+
+       }
+       .nav-info > a{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-decoration: none;
+       }
+       .nav-signup{
+        width: 100%;
+        height: 80%;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: end;
+    }
+    .nav-signup> img,.nav-signup>button{
+        margin: 5px;
+}
+.btn{
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: 1px solid black;
+    font-family: "Montserrat", sans-serif;
+    background-color: lightblue;
+}
+ .poster{
+    height: 500px;
+    width:80%;
+    margin: 40px 150px;
+
+ }
+ .poster-info{
+    height: 300px;
+    width: 100%;
+    border-radius: 20px;
+    color: pink;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: top center;
+    margin-top: -380px;
+    align-items: center;
+ }
+ .poster-info>p,.poster-info>h1{
+    width:50%;
+    text-align: center;
+ }
+ .explore{
+    width:80%;
+    margin-bottom: 100px;
+    padding-left: 150px;
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    border-bottom: 1.5px solid black;
+ }
+ .explore-items{
+    width: 100%;
+    height: 190px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    overflow-y: hidden;
+    padding: 10px 0;
+
+ }
+ .food-items{
+    width: 180px;
+    height:100%;
+    margin-right: 20px;
+    padding:10px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+
+ }
+@media only screen and (max-width:758px){
+    .nav-info,.poster-info > p{
+        display:none;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-brand">
+            <p> Brand</p>
+        </div>
+
+        <div class="nav-info">
+            <a href="/"> HOME</a>
+            <a href="/"> MENU</a>
+            <a href="/"> CONTACT US</a>
+
+        </div>
+
+        <div class="nav-signup">
+            <img src="./assets/icons8-bag-25.png" />
+            <button class="btn">Signup</button>
+        
+        </div>
+    </div>
+    <div class="poster">
+        <img src="/asset/background.jpg" style="width: 100%; height: 100%;object-fit: cover;border-radius: 20px;">
+        <div class="poster-info">
+            <h1>Order your favourite food here</h1>
+            <p> Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise.</p>
+            <button class="btn">View Menu</button>
+         </div>
+    </div>
+    <div class="explore">
+        <h2>Explore our menu</h2>
+        <p> Chose from a diverse menu featuring a delectable array of dishes. Our mission is to satisfy your craving and elevate your dining experience, one delicious meal at a time.</p>
+        <div class="explore-items">
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+            <div class="food-items">
+                <img src="/asset/salad.webp">
+                <p>Salad</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
